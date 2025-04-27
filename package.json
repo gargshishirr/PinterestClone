@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app.js"
-  }
+  },
   "dependencies": {
     "connect": "^3.7.0",
     "connect-flash": "^0.1.1",
