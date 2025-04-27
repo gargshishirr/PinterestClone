@@ -26,6 +26,7 @@ router.post('/upload',isLoggedIn,  upload.single('file'),async function(req, res
     imageText: req.body.filecaption,
     user: user._id
   });
+  console.log(post);
   user.posts.push(post._id);
   await user.save();
   res.redirect('/profile');

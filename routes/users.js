@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const plm = require('passport-local-mongoose')
 
-mongoose.connect("mongodb://127.0.0.1:27017/pinterestClone");
+mongoose.connect("mongodb+srv://gargshishir:Sgarg2002@pinterestclonecluster.e4asveg.mongodb.net/?retryWrites=true&w=majority&appName=PinterestCloneCluster");
 
 const UserSchema = new mongoose.Schema({
     username: {
