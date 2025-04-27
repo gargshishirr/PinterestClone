@@ -2,6 +2,14 @@ const mongoose = require('mongoose');
 const plm = require('passport-local-mongoose')
 
 mongoose.connect("mongodb+srv://gargshishir:Sgarg2002@pinterestclonecluster.e4asveg.mongodb.net/?retryWrites=true&w=majority&appName=PinterestCloneCluster");
+const mongoose = require('mongoose');
+
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('MongoDB Connected'))
+.catch((err) => console.log(err));
 
 const UserSchema = new mongoose.Schema({
     username: {
